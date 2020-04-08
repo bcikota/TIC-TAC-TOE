@@ -1,0 +1,12 @@
+.container {
+  display: grid;
+  padding-top: 3rem;
+  max-width: 15rem; }
+  @media only screen and (min-width: 600px) {
+    .container {
+      display: none; } }
+  .container .item {
+    height: 4rem;
+    border-color: #5c5c5c !important; }
+  .container .play-again {
+    justify-self: center; }

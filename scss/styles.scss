@@ -1,0 +1,17 @@
+.container {
+    display: grid;
+    padding-top: 3rem;
+    max-width: 15rem;
+    @media only screen and (min-width: 600px) {
+        display: none;
+    }
+        .item {
+            height: 4rem;
+            border-color: rgb(92, 92, 92) !important;
+        }
+      
+        .play-again{
+            justify-self: center;
+        }
+}
+
