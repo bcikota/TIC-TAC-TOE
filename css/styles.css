@@ -1,12 +1,65 @@
 .container {
-  display: grid;
-  padding-top: 3rem;
+  position: relative;
+  margin-top: 3rem;
   max-width: 15rem; }
   @media only screen and (min-width: 600px) {
     .container {
       display: none; } }
   .container .item {
     height: 4rem;
-    border-color: #5c5c5c !important; }
+    border-color: #5c5c5c !important;
+    text-align: center;
+    padding-top: 1rem; }
   .container .play-again {
-    justify-self: center; }
+    margin-left: 3.5rem; }
+  .container hr {
+    display: none; }
+  .container .hr-a1-a3 {
+    border: 0.5px solid black;
+    width: 100%;
+    position: relative;
+    top: 3rem; }
+  .container .hr-a1-c3 {
+    border: 0.5px solid black;
+    width: 16rem;
+    position: absolute;
+    top: 5rem;
+    left: -0.3rem;
+    transform: rotate(38deg); }
+  .container .hr-a3-c1 {
+    border: 0.5px solid black;
+    width: 16rem;
+    position: absolute;
+    top: 5rem;
+    right: -0.3rem;
+    transform: rotate(-38deg); }
+  .container .hr-b1-b3 {
+    border: 0.5px solid black;
+    width: 100%;
+    position: relative;
+    top: 7rem; }
+  .container .hr-c1-c3 {
+    border: 0.5px solid black;
+    width: 100%;
+    position: relative;
+    top: 11rem; }
+  .container .hr-a1-c1 {
+    border: 0.5px solid black;
+    width: 100%;
+    position: relative;
+    top: 7rem;
+    left: -5rem;
+    transform: rotate(90deg); }
+  .container .hr-a2-c2 {
+    border: 0.5px solid black;
+    width: 100%;
+    position: relative;
+    top: 7rem;
+    transform: rotate(90deg); }
+  .container .hr-a3-c3 {
+    border: 0.5px solid black;
+    width: 100%;
+    position: relative;
+    top: 7rem;
+    right: -5rem;
+    transform: rotate(90deg); }

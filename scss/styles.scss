@@ -1,6 +1,6 @@
 .container {
-    display: grid;
-    padding-top: 3rem;
+    position: relative;
+    margin-top: 3rem;
     max-width: 15rem;
     @media only screen and (min-width: 600px) {
         display: none;
@@ -8,10 +8,82 @@
         .item {
             height: 4rem;
             border-color: rgb(92, 92, 92) !important;
+            text-align: center;
+            padding-top: 1rem;
         }
-      
-        .play-again{
-            justify-self: center;
+
+        .play-again {
+            margin-left: 3.5rem;
         }
+              
+        hr {
+            display: none;
+        }
+
+        .hr-a1-a3 {
+            border: 0.5px solid black;
+            width: 100%;
+            position: relative;
+            top: 3rem;
+        }
+
+        .hr-a1-c3 {
+            border: 0.5px solid black;
+            width: 16rem;
+            position: absolute;
+            top: 5rem;
+            left: -0.3rem;
+            transform: rotate(38deg);
+        }
+
+        .hr-a3-c1 {
+            border: 0.5px solid black;
+            width: 16rem;
+            position: absolute;
+            top: 5rem;
+            right: -0.3rem;
+            transform: rotate(-38deg);
+        }
+
+        .hr-b1-b3 {
+            border: 0.5px solid black;
+            width: 100%;
+            position: relative;
+            top: 7rem;
+        }
+
+        .hr-c1-c3 {
+            border: 0.5px solid black;
+            width: 100%;
+            position: relative;
+            top: 11rem;
+        }
+
+        .hr-a1-c1 {
+            border: 0.5px solid black;
+            width: 100%;
+            position: relative;
+            top: 7rem;
+            left: -5rem;
+            transform: rotate(90deg);
+        }
+
+        .hr-a2-c2 {
+            border: 0.5px solid black;
+            width: 100%;
+            position: relative;
+            top: 7rem;
+            transform: rotate(90deg);
+        }
+
+        .hr-a3-c3 {
+            border: 0.5px solid black;
+            width: 100%;
+            position: relative;
+            top: 7rem;
+            right: -5rem;
+            transform: rotate(90deg);
+        }
+
 }
 
