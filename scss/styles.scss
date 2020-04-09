@@ -16,69 +16,66 @@
                 margin-top: 5rem !important;
             }
 
+            .hr-a1-a3,
+            .hr-b1-b3,
+            .hr-c1-c3 {
+                width: 21rem !important;
+            }
+
+            .hr-a1-c3,
+            .hr-a3-c1 {
+                width: 25rem !important;
+            }
+
+            .hr-a1-c1,
+            .hr-a2-c2,
+            .hr-a3-c3 {
+                width: 20rem !important;
+            }
+
+            .hr-a1-c3,
+            .hr-a3-c1,
+            .hr-a1-c1,
+            .hr-a2-c2,
+            .hr-a3-c3 {
+                top: 9.5rem !important;
+            }
+
             .hr-a1-a3 {
-                border: 0.5px solid black;
-                width: 100%;
-                position: relative;
-                top: 4rem !important;
+                top: 2rem !important;
+                left: 2rem;
             }
     
             .hr-a1-c3 {
-                border: 0.5px solid black;
-                width: 25rem !important;
-                position: absolute;
-                top: 9.5rem !important;
                 left: 0rem !important;
-                transform: rotate(41deg) !important;
+                transform: rotate(40deg) !important;
             }
     
             .hr-a3-c1 {
-                border: 0.5px solid black;
-                width: 25rem !important;
-                position: absolute;
-                top: 9.5rem !important;
                 right: 0rem !important;
                 transform: rotate(-40deg) !important;
             }
     
             .hr-b1-b3 {
-                border: 0.5px solid black;
-                width: 100%;
-                position: relative;
-                top: 11rem !important;
+                top: 9rem !important;
+                left: 2rem;
             }
     
             .hr-c1-c3 {
-                border: 0.5px solid black;
-                width: 100%;
-                position: relative;
-                top: 18rem !important;
+                top: 16rem !important;
+                left: 2rem;
             }
     
             .hr-a1-c1 {
-                border: 0.5px solid black;
-                width: 20rem !important;
-                position: relative;
-                top: 11.5rem !important;
-                left: -8.5rem !important;
-                transform: rotate(90deg);
+                left: -6rem !important;
             }
     
             .hr-a2-c2 {
-                border: 0.5px solid black;
-                width: 20rem !important;
-                position: relative;
-                top: 11.5rem !important;
-                transform: rotate(90deg);
+                left: 2.5rem !important;
             }
     
             .hr-a3-c3 {
-                border: 0.5px solid black;
-                width: 20rem !important;
-                position: relative;
-                top: 11.5rem !important;
-                right: -8.3rem !important;
-                transform: rotate(90deg);
+                right: -6rem !important;
             }
 
     }
@@ -95,70 +92,69 @@
               
         hr {
             display: none;
+            border: 0.5px solid black;
+            position: absolute;
+        }
+
+        .hr-a1-a3,
+        .hr-b1-b3,
+        .hr-c1-c3 {
+            width: 13rem;
+        }
+
+        .hr-a1-c3,
+        .hr-a3-c1 {
+            width: 16rem;
+        }
+
+        .hr-a1-c1,
+        .hr-a2-c2,
+        .hr-a3-c3 {
+            width: 11rem;
+        }
+
+        .hr-a1-c3,
+        .hr-a3-c1,
+        .hr-a1-c1,
+        .hr-a2-c2,
+        .hr-a3-c3 {
+            top: 5rem;
         }
 
         .hr-a1-a3 {
-            border: 0.5px solid black;
-            width: 100%;
-            position: relative;
-            top: 3rem;
+            top: 0.6rem;
         }
 
         .hr-a1-c3 {
-            border: 0.5px solid black;
-            width: 16rem;
-            position: absolute;
-            top: 5rem;
             left: -0.3rem;
             transform: rotate(38deg);
         }
 
         .hr-a3-c1 {
-            border: 0.5px solid black;
-            width: 16rem;
-            position: absolute;
-            top: 5rem;
             right: -0.3rem;
             transform: rotate(-38deg);
         }
 
         .hr-b1-b3 {
-            border: 0.5px solid black;
-            width: 100%;
-            position: relative;
-            top: 7rem;
+            top: 4.6rem;
         }
 
         .hr-c1-c3 {
-            border: 0.5px solid black;
-            width: 100%;
-            position: relative;
-            top: 11rem;
+            top: 8.6rem;
         }
 
         .hr-a1-c1 {
-            border: 0.5px solid black;
-            width: 100%;
-            position: relative;
-            top: 7rem;
-            left: -5rem;
+            left: -3rem;
             transform: rotate(90deg);
         }
 
         .hr-a2-c2 {
-            border: 0.5px solid black;
-            width: 100%;
-            position: relative;
-            top: 7rem;
+            left: 2rem;
             transform: rotate(90deg);
         }
 
         .hr-a3-c3 {
-            border: 0.5px solid black;
-            width: 100%;
-            position: relative;
-            top: 7rem;
-            right: -5rem;
+            right: -3rem;
             transform: rotate(90deg);
         }
 
