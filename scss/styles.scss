@@ -1,9 +1,86 @@
 .container {
     position: relative;
     margin-top: 3rem;
-    max-width: 15rem;
+    width: 15rem;
     @media only screen and (min-width: 600px) {
-        display: none;
+       width: 25rem;
+
+            .item {
+                height: 7rem !important;
+                font-size: 1.5rem;
+                padding-top: 2rem !important;
+            }
+
+            .play-again {
+                margin-left: 8.5rem !important;
+                margin-top: 5rem !important;
+            }
+
+            .hr-a1-a3 {
+                border: 0.5px solid black;
+                width: 100%;
+                position: relative;
+                top: 4rem !important;
+            }
+    
+            .hr-a1-c3 {
+                border: 0.5px solid black;
+                width: 25rem !important;
+                position: absolute;
+                top: 9.5rem !important;
+                left: 0rem !important;
+                transform: rotate(41deg) !important;
+            }
+    
+            .hr-a3-c1 {
+                border: 0.5px solid black;
+                width: 25rem !important;
+                position: absolute;
+                top: 9.5rem !important;
+                right: 0rem !important;
+                transform: rotate(-40deg) !important;
+            }
+    
+            .hr-b1-b3 {
+                border: 0.5px solid black;
+                width: 100%;
+                position: relative;
+                top: 11rem !important;
+            }
+    
+            .hr-c1-c3 {
+                border: 0.5px solid black;
+                width: 100%;
+                position: relative;
+                top: 18rem !important;
+            }
+    
+            .hr-a1-c1 {
+                border: 0.5px solid black;
+                width: 20rem !important;
+                position: relative;
+                top: 11.5rem !important;
+                left: -8.5rem !important;
+                transform: rotate(90deg);
+            }
+    
+            .hr-a2-c2 {
+                border: 0.5px solid black;
+                width: 20rem !important;
+                position: relative;
+                top: 11.5rem !important;
+                transform: rotate(90deg);
+            }
+    
+            .hr-a3-c3 {
+                border: 0.5px solid black;
+                width: 20rem !important;
+                position: relative;
+                top: 11.5rem !important;
+                right: -8.3rem !important;
+                transform: rotate(90deg);
+            }
+
     }
         .item {
             height: 4rem;
