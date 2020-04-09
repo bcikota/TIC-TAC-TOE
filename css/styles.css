@@ -10,8 +10,9 @@
         font-size: 1.5rem;
         padding-top: 2rem !important; }
       .container .play-again {
-        margin-left: 8.5rem !important;
-        margin-top: 5rem !important; }
+        margin-left: 7.5rem !important;
+        margin-top: 2rem !important;
+        font-size: 1.5rem; }
       .container .hr-a1-a3,
       .container .hr-b1-b3,
       .container .hr-c1-c3 {
@@ -49,14 +50,17 @@
       .container .hr-a2-c2 {
         left: 2.5rem !important; }
       .container .hr-a3-c3 {
-        right: -6rem !important; } }
+        right: -6rem !important; }
+      .container .congrats {
+        font-size: 1.5rem; } }
   .container .item {
     height: 4rem;
     border-color: #5c5c5c !important;
     text-align: center;
     padding-top: 1rem; }
   .container .play-again {
-    margin-left: 3.5rem; }
+    margin-left: 3.5rem;
+    margin-top: 2rem !important; }
   .container hr {
     display: none;
     border: 0.5px solid black;
@@ -99,3 +103,6 @@
   .container .hr-a3-c3 {
     right: -3rem;
     transform: rotate(90deg); }
+  .container .congrats {
+    text-align: center;
+    margin-top: 2rem; }

@@ -12,8 +12,9 @@
             }
 
             .play-again {
-                margin-left: 8.5rem !important;
-                margin-top: 5rem !important;
+                margin-left: 7.5rem !important;
+                margin-top: 2rem !important;
+                font-size: 1.5rem;
             }
 
             .hr-a1-a3,
@@ -78,6 +79,10 @@
                 right: -6rem !important;
             }
 
+            .congrats {
+                font-size: 1.5rem;
+            }
+
     }
         .item {
             height: 4rem;
@@ -88,6 +93,7 @@
 
         .play-again {
             margin-left: 3.5rem;
+            margin-top: 2rem !important;
         }
               
         hr {
@@ -156,6 +162,11 @@
         .hr-a3-c3 {
             right: -3rem;
             transform: rotate(90deg);
+        }
+
+        .congrats {
+            text-align: center;
+            margin-top: 2rem;
         }
 
 }
