@@ -1,3 +1,5 @@
+
+
 let items = document.querySelectorAll('.item');
 let count = 0;
 let a1 = document.querySelector('#a1');
@@ -25,113 +27,8 @@ if(player1 === null && player2 === null) {
     player2 = "player2";
 }
 
-items.forEach(item => {
-
-    let player = function (name, sign) {
-        return {
-            name,
-            write() {
-                item.textContent = sign;
-            }
-        }
-    };
-
-
-
-    let X = player(player1, 'X');
-
-    let O = player(player2, 'O');
-
-    function game() {
-        const counterCreator = () => {
-            return () => {
-                count++;
-            };
-        };
-
-        const counter = counterCreator();
-        counter();
-
-        function writeXorO() {
-            if (count % 2 === 1 && item.textContent === '') {
-                X.write();
-                X.name;
-
-            } else if (count % 2 === 0 && item.textContent === '') {
-                O.write();
-                O.name;
-            } else {
-                count--;
-            }
-        }
-
-
-        writeXorO();
-
-        function cssAndGameOver() {
-            hr.style.display = 'block';
-            container.style.marginTop = '3rem';
-            gameOver = true;
-            div = document.createElement('div');
-            
-
-            if (count % 2 === 1) {
-                congrats.textContent = `The winner is ${X.name}!`;
-                congrats.classList.add('congrats');
-            } else if (count % 2 === 0) {
-                congrats.textContent = `The winner is ${O.name}!`;
-                congrats.classList.add('congrats');
-            }
-        }
-
-
-        function drawLine() {
-            if (a1.textContent === a2.textContent && a2.textContent === a3.textContent && a1.textContent !== '' && a2.textContent !== '' && a3.textContent !== '') {
-                hr.classList.add('hr-a1-a3');
-                cssAndGameOver();
-            } else if (a1.textContent === b2.textContent && b2.textContent === c3.textContent && a1.textContent !== '' && b2.textContent !== '' && c3.textContent !== '') {
-                hr.classList.add('hr-a1-c3');
-                cssAndGameOver();
-            } else if (a3.textContent === b2.textContent && b2.textContent === c1.textContent && a3.textContent !== '' && b2.textContent !== '' && c1.textContent !== '') {
-                hr.classList.add('hr-a3-c1');
-                cssAndGameOver();
-            } else if (b1.textContent === b2.textContent && b2.textContent === b3.textContent && b1.textContent !== '' && b2.textContent !== '' && b3.textContent !== '') {
-                hr.classList.add('hr-b1-b3');
-                cssAndGameOver();
-            } else if (c1.textContent === c2.textContent && c2.textContent === c3.textContent && c1.textContent !== '' && c2.textContent !== '' && c3.textContent !== '') {
-                hr.classList.add('hr-c1-c3');
-                cssAndGameOver();
-            } else if (a1.textContent === b1.textContent && b1.textContent === c1.textContent && a1.textContent !== '' && b1.textContent !== '' && c1.textContent !== '') {
-                hr.classList.add('hr-a1-c1');
-                cssAndGameOver();
-            } else if (a2.textContent === b2.textContent && b2.textContent === c2.textContent && a2.textContent !== '' && b2.textContent !== '' && c2.textContent !== '') {
-                hr.classList.add('hr-a2-c2');
-                cssAndGameOver();
-            } else if (a3.textContent === b3.textContent && b3.textContent === c3.textContent && a3.textContent !== '' && b3.textContent !== '' && c3.textContent !== '') {
-                hr.classList.add('hr-a3-c3');
-                cssAndGameOver();
-            } else if (a1.textContent !== '' && a2.textContent !== '' && a3.textContent !== '' && b1.textContent !== '' && b2.textContent !== '' && b3.textContent !== '' && c1.textContent !== '' && c2.textContent !== '' && c3.textContent !== '') {
-                congrats.textContent = 'It a Tie!';
-                congrats.classList.add('congrats');
-            }
-        }
-
-        drawLine();
-    }
-
-    item.addEventListener('click', game);
-});
-
-newPlayers.addEventListener('click', function () {
-    window.location.reload(true);
-});
-
-playAgain.addEventListener('click', function(){
+let gameboard = () => {
     items.forEach(item => {
-        item.textContent = '';
-        hr.removeAttribute("class");
-        count = 0;
-        congrats.textContent = '';
 
         let player = function (name, sign) {
             return {
@@ -159,11 +56,11 @@ playAgain.addEventListener('click', function(){
             counter();
     
             function writeXorO() {
-                if (count % 2 === 1 && item.textContent === '') {
+                if (count % 2 === 1 && item.textContent === '' && gameOver === false) {
                     X.write();
                     X.name;
     
-                } else if (count % 2 === 0 && item.textContent === '') {
+                } else if (count % 2 === 0 && item.textContent === '' && gameOver === false) {
                     O.write();
                     O.name;
                 } else {
@@ -217,7 +114,7 @@ playAgain.addEventListener('click', function(){
                     hr.classList.add('hr-a3-c3');
                     cssAndGameOver();
                 } else if (a1.textContent !== '' && a2.textContent !== '' && a3.textContent !== '' && b1.textContent !== '' && b2.textContent !== '' && b3.textContent !== '' && c1.textContent !== '' && c2.textContent !== '' && c3.textContent !== '') {
-                    congrats.textContent = 'It a Tie!';
+                    congrats.textContent = "It's a Tie!";
                     congrats.classList.add('congrats');
                 }
             }
@@ -226,5 +123,22 @@ playAgain.addEventListener('click', function(){
         }
     
         item.addEventListener('click', game);
+    });
+};
+
+gameboard();
+
+newPlayers.addEventListener('click', function () {
+    window.location.reload(true);
+});
+
+playAgain.addEventListener('click', function(){
+    gameOver = false;
+    hr.removeAttribute("class");
+    count = 0;
+    congrats.textContent = '';
+    gameboard();
+    items.forEach(item => {
+        item.textContent = '';
     });
 });
