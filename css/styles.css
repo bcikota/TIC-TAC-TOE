@@ -9,10 +9,11 @@
         height: 7rem !important;
         font-size: 1.5rem;
         padding-top: 2rem !important; }
-      .container .play-again {
-        margin-left: 7.5rem !important;
-        margin-top: 2rem !important;
+      .container .play-again,
+      .container .new-players {
         font-size: 1.5rem; }
+      .container .play-again {
+        margin-right: 1rem !important; }
       .container .hr-a1-a3,
       .container .hr-b1-b3,
       .container .hr-c1-c3 {
@@ -58,9 +59,11 @@
     border-color: #5c5c5c !important;
     text-align: center;
     padding-top: 1rem; }
+  .container .play-again,
+  .container .new-players {
+    margin-top: 2rem; }
   .container .play-again {
-    margin-left: 3.5rem;
-    margin-top: 2rem !important; }
+    margin-right: .5rem; }
   .container hr {
     display: none;
     border: 0.5px solid black;

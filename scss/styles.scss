@@ -11,10 +11,13 @@
                 padding-top: 2rem !important;
             }
 
-            .play-again {
-                margin-left: 7.5rem !important;
-                margin-top: 2rem !important;
+            .play-again,
+            .new-players {
                 font-size: 1.5rem;
+            }
+
+            .play-again {
+                margin-right: 1rem !important;
             }
 
             .hr-a1-a3,
@@ -91,9 +94,13 @@
             padding-top: 1rem;
         }
 
+        .play-again,
+        .new-players {
+            margin-top: 2rem;
+        }
+
         .play-again {
-            margin-left: 3.5rem;
-            margin-top: 2rem !important;
+            margin-right: .5rem;
         }
               
         hr {
